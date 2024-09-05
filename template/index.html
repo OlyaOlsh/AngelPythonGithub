@@ -34,8 +34,9 @@ body {
 }
 
 /* Стиль для формы */
-form {
-    display: flex;
+#form {
+    display: none;
+    text-align: center;
     flex-direction: column;
     gap: 15px; /* Пространство между элементами */
 }
@@ -117,7 +118,7 @@ button:active {
 
     buy.addEventListener("click", () => {
         document.getElementById("main").style.display = "none";
-        document.getElementById("form").style.display = "flex";
+        document.getElementById("form").style.display = "block";
         document.getElementById("user_name").value =  tg.initDataUnsafe.user.first_name + " "+  tg.initDataUnsafe.user.last_name
     })
 
